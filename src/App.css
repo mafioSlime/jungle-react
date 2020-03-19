@@ -13,6 +13,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+}
+
 .header {
   height: 100vh;
   display: flex;
@@ -47,4 +51,28 @@ a {
   background-color: rgba(5, 107, 79, 0.9);
   color: #f5cb04;
   border: 2px solid #000;
+}
+
+.main {
+  max-width: 90%;
+  margin: 2rem auto;
+}
+
+.card {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.card-img {
+  width: 350px;
+}
+
+@media (min-width: 758px) {
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1rem;
+  }
 }
